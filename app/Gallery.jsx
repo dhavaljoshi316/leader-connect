@@ -116,7 +116,7 @@ export default function GalleryScreen() {
                             </View>
                         )}
 
-                        {/* VIDEOS */}
+                        {/* VIDEOS */} 
                         {demoGalleryVideos?.length > 0 && (
                             <View style={styles.section}>
                                 <View style={styles.sectionHeader}>
