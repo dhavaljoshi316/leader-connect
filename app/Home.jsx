@@ -1,19 +1,12 @@
-import { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
-import SideDrawer from '../components/SideDrawer';
+import { StyleSheet, View } from 'react-native';
+import BottomNav from '../BottomNav';
 
 export default function Home() {
-  const [open, setOpen] = useState(false);
-
   return (
     <View style={styles.container}>
-      <SideDrawer open={open} onClose={() => setOpen(false)} />
-
-      <Pressable onPress={() => setOpen(true)} style={styles.menuBtn}>
-        <Text style={styles.menu}>☰</Text>
-      </Pressable>
-
-      <Text style={styles.text}>Home Screen</Text>
+      <View style={{ flex: 1 }}>
+      </View>
+      <BottomNav />
     </View>
   );
 }
