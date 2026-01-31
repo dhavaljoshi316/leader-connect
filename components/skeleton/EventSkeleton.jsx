@@ -1,7 +1,7 @@
 import { StyleSheet, View } from "react-native"
-import { layout } from "../../globalCSS/Dimensions"
-import { Card } from "./../../components/ui/Card"
-import Skeleton from "./../../components/ui/Skeleton"
+import { layout } from "../../globalCSS/dimensions"
+import { Card } from "../ui/card"
+import Skeleton from "../ui/skeleton"
 
 function EventCardSkeleton() {
   return (

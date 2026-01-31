@@ -4,7 +4,7 @@ import { useEffect } from "react"
 import { Dimensions, Text, View } from "react-native"
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from "react-native-reanimated"
 import { demoLeader } from "../data/demoData"
-import { colors } from "../globalCSS/GlobalCss"
+import { colors } from "../globalCSS/globalcss"
 
 const { height } = Dimensions.get("window")
 
@@ -38,7 +38,7 @@ export default function SplashScreen({}) {
 
     setTimeout(() => {
       opacity.value = withTiming(0, { duration: splashConfig.timings.fadeDuration })
-      setTimeout(() => navigation.replace("Home"), splashConfig.timings.fadeDuration)
+      setTimeout(() => navigation.replace("home"), splashConfig.timings.fadeDuration)
     }, splashConfig.timings.fadeStart)
   }, [])
 

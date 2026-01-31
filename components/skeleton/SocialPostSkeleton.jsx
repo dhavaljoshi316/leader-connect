@@ -1,7 +1,7 @@
 import { View } from "react-native"
-import { layout } from "../../globalCSS/Dimensions"
-import { Card, CardContent } from "../ui/Card"
-import Skeleton from "../ui/Skeleton"
+import { layout } from "../../globalCSS/dimensions"
+import { Card, CardContent } from "../ui/card"
+import Skeleton from "../ui/skeleton"
 
 function SocialPostSkeleton() {
   return (

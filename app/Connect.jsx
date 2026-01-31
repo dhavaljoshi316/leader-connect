@@ -1,12 +1,12 @@
 import { Ionicons } from "@expo/vector-icons"
 import { useNavigation } from "@react-navigation/native"
 import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from "react-native"
-import BottomNav from "../BottomNav"
-import { Card, CardContent } from "../components/ui/Card"
+import BottomNav from "../bottomnav"
+import { Card, CardContent } from "../components/ui/card"
 import { demoLeader } from "../data/demoData"
-import { layout } from "../globalCSS/Dimensions"
-import { colors } from "../globalCSS/GlobalCss"
-import { platformConfig } from "../globalCSS/PlatformConfig"
+import { layout } from "../globalCSS/dimensions"
+import { colors } from "../globalCSS/globalcss"
+import { platformConfig } from "../globalCSS/platformconfig"
 
 export default function Connect() {
   const navigation = useNavigation()

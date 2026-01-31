@@ -3,14 +3,14 @@ import { useNavigation, useRoute } from "@react-navigation/native"
 import * as Haptics from "expo-haptics"
 import { Pressable, Text, View } from "react-native"
 import { useSafeAreaInsets } from "react-native-safe-area-context"
-import { colors } from "./globalCSS/GlobalCss"
+import { colors } from "./globalCSS/globalcss"
 
 const navConfig = [
-  { key: "Home", label: "Home", icon: "home-outline", activeIcon: "home" },
-  { key: "Gallery", label: "Gallery", icon: "image-outline", activeIcon: "image" },
-  { key: "Events", label: "Events", icon: "calendar-outline", activeIcon: "calendar" },
-  { key: "Social", label: "Social", icon: "people-outline", activeIcon: "people" },
-  { key: "Connect", label: "Connect", icon: "call-outline", activeIcon: "call" },
+  { key: "home", label: "Home", icon: "home-outline", activeIcon: "home" },
+  { key: "gallery", label: "Gallery", icon: "image-outline", activeIcon: "image" },
+  { key: "events", label: "Events", icon: "calendar-outline", activeIcon: "calendar" },
+  { key: "social", label: "Social", icon: "people-outline", activeIcon: "people" },
+  { key: "connect", label: "Connect", icon: "call-outline", activeIcon: "call" },
 ]
 
 export default function BottomNav() {

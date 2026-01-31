@@ -2,9 +2,9 @@ import { useColorScheme } from "@/hooks/use-color-scheme"
 import { DarkTheme, DefaultTheme, ThemeProvider } from "@react-navigation/native"
 import { Stack } from "expo-router"
 import { StatusBar } from "expo-status-bar"
-import { SafeAreaProvider } from "react-native-safe-area-context"
-import AppSafeArea from "../components/AppSafeArea"
 import "react-native-reanimated"
+import { SafeAreaProvider } from "react-native-safe-area-context"
+import AppSafeArea from "../components/appsafearea"
 
 export default function RootLayout() {
   const colorScheme = useColorScheme()
@@ -14,7 +14,7 @@ export default function RootLayout() {
       <SafeAreaProvider>
         <AppSafeArea>
           <Stack
-            initialRouteName="SplashScreen"
+            initialRouteName="splashscreen"
             screenOptions={{
               headerShown: false,
             }}

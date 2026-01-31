@@ -3,7 +3,7 @@ import * as Haptics from "expo-haptics"
 import { useState } from "react"
 import { RefreshControl, ScrollView, View } from "react-native"
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from "react-native-reanimated"
-import { colors } from "../globalCSS/GlobalCss"
+import { colors } from "../globalCSS/globalcss"
 
 export default function PullToRefresh({ onRefresh, children }) {
   const [refreshing, setRefreshing] = useState(false)

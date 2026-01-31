@@ -1,7 +1,7 @@
 import { View } from "react-native"
-import { Card, CardContent } from "./../../components/ui/Card"
-import Skeleton from "./../../components/ui/Skeleton"
-import { layout } from "./../../globalCSS/Dimensions"
+import { layout } from "../../globalCSS/dimensions"
+import { Card, CardContent } from "../ui/card"
+import Skeleton from "../ui/skeleton"
 
 export function PhotoCarouselSkeleton() {
   return (

@@ -1,10 +1,10 @@
 import Animated, {
-    useAnimatedStyle,
-    useSharedValue,
-    withRepeat,
-    withTiming,
+  useAnimatedStyle,
+  useSharedValue,
+  withRepeat,
+  withTiming,
 } from "react-native-reanimated"
-import { colors } from "../../globalCSS/GlobalCss"
+import { colors } from "../../globalCSS/globalcss"
 
 export default function Skeleton({ width, height, radius = 8 }) {
   const opacity = useSharedValue(0.4)

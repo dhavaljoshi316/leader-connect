@@ -1,8 +1,8 @@
+import { useNavigation, useRoute } from "@react-navigation/native"
 import { useEffect } from "react"
 import { Pressable, Text, View } from "react-native"
-import { useNavigation, useRoute } from "@react-navigation/native"
-import { layout } from "./../globalCSS/Dimensions"
-import { colors } from "./../globalCSS/GlobalCss"
+import { layout } from "../globalCSS/dimensions"
+import { colors } from "../globalCSS/globalcss"
 
 export default function NotFound() {
   const navigation = useNavigation()
@@ -51,7 +51,7 @@ export default function NotFound() {
       </Text>
 
       <Pressable
-        onPress={() => navigation.replace("Home")}
+        onPress={() => navigation.replace("home")}
         style={{
           paddingVertical: layout.spacing.sm,
           paddingHorizontal: layout.spacing.lg,

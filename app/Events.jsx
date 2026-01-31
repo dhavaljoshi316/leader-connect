@@ -3,21 +3,21 @@ import { useNavigation } from "@react-navigation/native"
 import moment from "moment"
 import { useCallback, useState } from "react"
 import {
-    Image,
-    Pressable,
-    ScrollView,
-    StyleSheet,
-    Text,
-    View,
+  Image,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
 } from "react-native"
 
-import BottomNav from "../BottomNav"
-import PullToRefresh from "../components/PullToRefresh"
-import { EventCardSkeletonList } from "../components/skeleton/EventSkeleton"
-import { Card, CardContent } from "../components/ui/Card"
+import BottomNav from "../bottomnav"
+import PullToRefresh from "../components/pulltorefresh"
+import { EventCardSkeletonList } from "../components/skeleton/eventskeleton"
+import { Card, CardContent } from "../components/ui/card"
 import { demoEvents } from "../data/demoData"
-import { layout } from "../globalCSS/Dimensions"
-import { colors } from "../globalCSS/GlobalCss"
+import { layout } from "../globalCSS/dimensions"
+import { colors } from "../globalCSS/globalcss"
 
 export default function EventsScreen() {
   const navigation = useNavigation()

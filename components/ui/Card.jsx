@@ -1,7 +1,7 @@
 import { forwardRef } from "react"
 import { Text, View } from "react-native"
-import { layout } from "../../globalCSS/Dimensions"
-import { colors } from "../../globalCSS/GlobalCss"
+import { layout } from "../../globalCSS/dimensions"
+import { colors } from "../../globalCSS/globalcss"
 
 const Card = forwardRef(({ style, ...props }, ref) => (
   <View
@@ -97,7 +97,7 @@ const CardFooter = forwardRef(({ style, ...props }, ref) => (
 ))
 
 export {
-    Card, CardContent, CardDescription, CardFooter, CardHeader,
-    CardTitle
+  Card, CardContent, CardDescription, CardFooter, CardHeader,
+  CardTitle
 }
 
