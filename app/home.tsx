@@ -104,10 +104,10 @@ export default function HomeScreen(): JSX.Element {
                       <View style={styles.heroRow}>
                         <Pressable onPress={() => navigation.push('about')}>
                           <Image
-                          source={{ uri: demoLeader.photoUrl }}
-                          style={styles.heroImage}
-                          
-                        />
+                            source={{ uri: demoLeader.photoUrl }}
+                            style={styles.heroImage}
+
+                          />
                         </Pressable>
 
                         <View style={styles.heroText}>
@@ -244,7 +244,7 @@ const SectionHeader = ({
 }) => (
   <View style={styles.sectionHeader}>
     <Text style={styles.sectionTitle}>{title}</Text>
-    <Button variant="ghost" size="icon" onClick={onPress}>
+    <Button variant="ghost" size="icon" onPress={() => onPress()}>
       <Ionicons name="chevron-forward" size={18} color={colors.primary} />
     </Button>
   </View>

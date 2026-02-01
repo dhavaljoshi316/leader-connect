@@ -1,8 +1,7 @@
 import { Ionicons } from "@expo/vector-icons"
 import { useNavigation } from "@react-navigation/native"
-import * as Sharing from "expo-sharing"
 import { useCallback, useState } from "react"
-import { Image, Pressable, ScrollView, StyleSheet, Text, View } from "react-native"
+import { Image, Linking, Pressable, ScrollView, StyleSheet, Text, View } from "react-native"
 import BottomNav from "../bottomnav"
 import PullToRefresh from "../components/pulltorefresh"
 import GallerySkeletonList from "../components/skeleton/galleryskeleton"
@@ -20,7 +19,8 @@ export default function GalleryScreen() {
 
     const handleShare = async (title, url) => {
         if (url) {
-            await Sharing.shareAsync(url)
+            // await Sharing.shareAsync(url)
+            await Linking.openURL(url);
         }
     }
 
@@ -126,8 +126,8 @@ export default function GalleryScreen() {
 
                                 {demoGalleryVideos?.map(video => (
                                     <Card key={video?.id} style={styles.videoCard}>
-                                        {/* <Pressable onPress={() => handleShare(video?.title, video?.videoUrl)}> */}
-                                        <Pressable onPress={() => { }}>
+                                        <Pressable onPress={() => handleShare(video?.title, video?.videoUrl)}>
+                                        {/* <Pressable onPress={() => { }}> */}
                                             <Image
                                                 source={{ uri: video?.thumbnailUrl }}
                                                 style={styles.videoImage}
